@@ -1,4 +1,9 @@
-<h1>Hello World</h1>
+const router = Router();
 
-<h2>It's Me</h2>
-<p>This is a Raj</p>
+
+router.use("/api", apiRouter);
+router.use("/auth", authRouter);
+router.use("/user", userRouter);
+router.use("/admin", adminRouter);
+router.use("/dashboard", dashboardRouter);
+router.use("/settings", settingsRouter);
